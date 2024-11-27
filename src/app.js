@@ -1,8 +1,8 @@
-const express = require('express')
-const mongoose = require('mongoose')
-const bookRoutes = require('./routes/book.routes')
-const bodyParser = require('body-parser')
-const { config } = require('dotenv')
+import express from 'express'
+import mongoose from 'mongoose'
+import bookRoutes from './routes/book.routes.js'
+import bodyParser from 'body-parser'
+import { config } from 'dotenv'
 
 config()
 const port = process.env.PORT || 3000

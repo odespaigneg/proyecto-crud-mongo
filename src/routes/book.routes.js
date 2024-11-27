@@ -1,6 +1,7 @@
-const express = require('express')
+import express from 'express'
+import Book from '../models/book.model.js'
+
 const router = express.Router()
-const Book = require('../models/book.model')
 
 const getBook = async (req, res, next) => {
     let book
@@ -133,4 +134,6 @@ router.delete('/:id', getBook, async (req, res) => {
     }    
 })
 
-module.exports = router
+export default router
+
+//module.exports = router
